@@ -1,0 +1,469 @@
+* {
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #051620;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px 1fr 60px;
+  height: 100vh;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 60px;
+  height: 100vh;
+  border-top: 1px solid #b2ff01;
+}
+
+.flexcenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexcolumn {
+  flex-direction: column;
+}
+
+.center {
+  text-align: center;
+}
+
+.flexcolumnspacearound {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.flexrowspacearound {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flexrowaligncenter {
+  display: flex;
+  align-items: center;
+}
+
+.signature {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  color: #bdbfb9;
+  font-size: 34px;
+}
+
+.mainsection {
+  justify-content: left;
+}
+
+.earth {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.earth > div {
+  width: 200%;
+  height: 100%;
+  background: url('./images/earthmap.jpeg') no-repeat;
+  background-size: cover;
+  animation: spin 10s linear alternate infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.font14 {
+  font-size: 14px;
+}
+
+.font18 {
+  font-size: 18px;
+}
+
+.font24 {
+  font-size: 24px;
+}
+
+.font34 {
+  font-size: 34px;
+}
+
+.font48 {
+  font-size: 48px;
+}
+
+.font72 {
+  font-size: 72px;
+}
+
+.limegreen {
+  color: #b2ff01;
+}
+
+.white {
+  color: #fff;
+}
+
+.navy {
+  color: #051620;
+}
+
+input[type="text"] {
+  width: 450px;
+  height: 50px;
+  color: #051620;
+  padding-left: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  height: 58px;
+  background-color: #bdbfb9;
+  font-size: 36px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+/* .invalidinput{
+    outline:2px #B2FF01 !important;
+} */
+
+.invalidtext {
+  color: red;
+}
+
+.validtext {
+  color: #31b625;
+}
+
+.border {
+  border: 2px solid white;
+}
+
+.border-top {
+  border-top: 2px solid white;
+}
+
+.border-bottom {
+  border-bottom: 2px solid white;
+}
+
+.padding5 {
+  padding: 5px;
+}
+
+.padding10 {
+  padding: 10px;
+}
+
+.bg46 {
+  background-color: #464646;
+}
+
+.bgB9 {
+  background-color: #b9b9b9;
+}
+
+.bgc4 {
+  background-color: #c4c4c4;
+}
+
+.bgwhite {
+  background-color: white;
+}
+
+.bgyellow {
+  background-color: #b2ff01;
+}
+
+.nobullets {
+  list-style: none;
+}
+
+li {
+  background-color: inherit;
+}
+
+.marginleft23 {
+  margin-left: 23px;
+}
+
+.margintop13 {
+  margin-top: 13px;
+}
+
+.margintop16 {
+  margin-top: 16px;
+}
+
+.margintop5 {
+  margin-top: 5px;
+}
+
+.marginbottom10 {
+  margin-bottom: 10px;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.top0 {
+  top: 0;
+}
+
+.left0 {
+  left: 0;
+}
+
+.right0 {
+  right: 0;
+}
+
+.bottom0 {
+  bottom: 0;
+}
+
+.none {
+  display: none;
+}
+
+.bottom-18 {
+  bottom: -18px;
+}
+
+.cursor {
+  position: absolute;
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  border: 3px solid #000;
+  padding: 2px;
+}
+
+#searchDate {
+  width: 111px;
+  height: 42px;
+  font-size: 18px;
+}
+
+#dateSearchOutput > p {
+  margin-bottom: 7px;
+  list-style: ;
+}
+
+.unset {
+  align-content: unset;
+  align-items: unset;
+  align-self: unset;
+  animation: unset;
+  appearance: unset;
+  backface-visibility: unset;
+  background-blend-mode: unset;
+  background: unset;
+  binding: unset;
+  block-size: unset;
+  border-block-end: unset;
+  border-block-start: unset;
+  border-collapse: unset;
+  border-inline-end: unset;
+  border-inline-start: unset;
+  border-radius: unset;
+  border-spacing: unset;
+  border: unset;
+  bottom: unset;
+  box-align: unset;
+  box-decoration-break: unset;
+  box-direction: unset;
+  box-flex: unset;
+  box-ordinal-group: unset;
+  box-orient: unset;
+  box-pack: unset;
+  box-shadow: unset;
+  box-sizing: unset;
+  caption-side: unset;
+  clear: unset;
+  clip-path: unset;
+  clip-rule: unset;
+  clip: unset;
+  color-adjust: unset;
+  color-interpolation-filters: unset;
+  color-interpolation: unset;
+  color: unset;
+  column-fill: unset;
+  column-gap: unset;
+  column-rule: unset;
+  columns: unset;
+  content: unset;
+  control-character-visibility: unset;
+  counter-increment: unset;
+  counter-reset: unset;
+  cursor: unset;
+  display: unset;
+  dominant-baseline: unset;
+  empty-cells: unset;
+  fill-opacity: unset;
+  fill-rule: unset;
+  fill: unset;
+  filter: unset;
+  flex-flow: unset;
+  flex: unset;
+  float-edge: unset;
+  float: unset;
+  flood-color: unset;
+  flood-opacity: unset;
+  font-family: unset;
+  font-feature-settings: unset;
+  font-kerning: unset;
+  font-language-override: unset;
+  font-size-adjust: unset;
+  font-size: unset;
+  font-stretch: unset;
+  font-style: oblique;
+  font-synthesis: unset;
+  font-variant: unset;
+  font-weight: unset;
+  font: ;
+  force-broken-image-icon: unset;
+  height: unset;
+  hyphens: unset;
+  image-orientation: unset;
+  image-region: unset;
+  image-rendering: unset;
+  ime-mode: unset;
+  inline-size: unset;
+  isolation: unset;
+  justify-content: unset;
+  justify-items: unset;
+  justify-self: unset;
+  left: unset;
+  letter-spacing: unset;
+  lighting-color: unset;
+  line-height: unset;
+  list-style: unset;
+  margin-block-end: unset;
+  margin-block-start: unset;
+  margin-inline-end: unset;
+  margin-inline-start: unset;
+  margin: unset;
+  marker-offset: unset;
+  marker: unset;
+  mask-type: unset;
+  mask: unset;
+  max-block-size: unset;
+  max-height: unset;
+  max-inline-size: unset;
+  max-width: unset;
+  min-block-size: unset;
+  min-height: unset;
+  min-inline-size: unset;
+  min-width: unset;
+  mix-blend-mode: unset;
+  object-fit: unset;
+  object-position: unset;
+  offset-block-end: unset;
+  offset-block-start: unset;
+  offset-inline-end: unset;
+  offset-inline-start: unset;
+  opacity: unset;
+  order: unset;
+  orient: unset;
+  outline-offset: unset;
+  outline-radius: unset;
+  outline: unset;
+  overflow: unset;
+  padding-block-end: unset;
+  padding-block-start: unset;
+  padding-inline-end: unset;
+  padding-inline-start: unset;
+  padding: unset;
+  page-break-after: unset;
+  page-break-before: unset;
+  page-break-inside: unset;
+  paint-order: unset;
+  perspective-origin: unset;
+  perspective: unset;
+  pointer-events: unset;
+  position: unset;
+  quotes: unset;
+  resize: unset;
+  right: unset;
+  ruby-align: unset;
+  ruby-position: unset;
+  scroll-behavior: unset;
+  scroll-snap-coordinate: unset;
+  scroll-snap-destination: unset;
+  scroll-snap-points-x: unset;
+  scroll-snap-points-y: unset;
+  scroll-snap-type: unset;
+  shape-rendering: unset;
+  stack-sizing: unset;
+  stop-color: unset;
+  stop-opacity: unset;
+  stroke-dasharray: unset;
+  stroke-dashoffset: unset;
+  stroke-linecap: unset;
+  stroke-linejoin: unset;
+  stroke-miterlimit: unset;
+  stroke-opacity: unset;
+  stroke-width: unset;
+  stroke: unset;
+  tab-size: unset;
+  table-layout: unset;
+  text-align-last: unset;
+  text-align: unset;
+  text-anchor: unset;
+  text-combine-upright: unset;
+  text-decoration: unset;
+  text-emphasis-position: unset;
+  text-emphasis: unset;
+  text-indent: unset;
+  text-orientation: unset;
+  text-overflow: unset;
+  text-rendering: unset;
+  text-shadow: unset;
+  text-size-adjust: unset;
+  text-transform: unset;
+  top: unset;
+  transform-origin: unset;
+  transform-style: unset;
+  transform: unset;
+  transition: unset;
+  user-focus: unset;
+  user-input: unset;
+  user-modify: unset;
+  user-select: unset;
+  vector-effect: unset;
+  vertical-align: unset;
+  visibility: unset;
+  white-space: unset;
+  width: unset;
+  will-change: unset;
+  window-dragging: unset;
+  word-break: unset;
+  word-spacing: unset;
+  word-wrap: unset;
+  writing-mode: unset;
+  z-index: unset;
+}

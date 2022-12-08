@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./main.css" rel="stylesheet">
+    <title>My Regex World</title>
+</head>
+<body>
+    <main>
+        <div class="signature mainsection">
+            &lt;Honeycoded/&gt;
+        </div>
+        <div class="flexcenter font48 limegreen">
+            <p>MY REGEX WORLD&nbsp;</p>
+            <div class="earth">
+                <div></div>
+            </div>
+        </div>
+        <div class="flexcenter flexrowspacearound  font34 white" id="scrollDown">
+            <img src="./icons/downarrow.png" alt="down arrow">
+            <p> .  .  . \Dive/in .  .  .</p>
+            <img src="./icons/downarrow.png" alt="down arrow">
+        </div>
+    </main>
+
+    <section id="testBoundingRect">
+        <div class="flexcolumnspacearound flexcenter">
+            <div>
+                <div class="font72 limegreen center">credit card checker</div>
+                <div class="limegreen font48">(supported: visa, mastercard, amex, diner’s club)</div>
+            </div>
+            <div class="flexcenter">
+                    <label for="creditcardnumber" class="font34 white">enter credit card number:&nbsp;</label>
+                    <input type="text" name="creditcardnumber" id="creditcardnumber">
+            </div>
+            <div class="flexcenter">
+                <p class="white font34">company:&nbsp;</p>
+                <p class="white font34" id="creditcardcompany">card not supported</p>
+            </div>
+        </div>
+        <div class="signature">
+            &lt;Honeycoded/&gt;
+        </div>
+    </section>
+
+    <section>
+        <div class="flexcolumnspacearound">
+                <div class="font72 limegreen center">credentials validator</div>
+            <div class="flexrowspacearound">
+                <div class="flexcolumnspacearound" style="height: 406px;">
+                    <div class="flexrowspacearound"><p class="font34 white">email address:</p><button id="copyemailregex" class="flexrowspacearound flexcenter bgB9 regexbtn"><img src="./icons/clipboard.png"></img>copy regex</button></div>
+                    <span class="relative">
+                        <div class="bg46 absolute flexcenter right0" style="width: 54px;height: 58px;">
+                            <img src="./icons/x.png" alt="x" class="none" id="emailx">
+                            <div class="left0 absolute flexcenter" style="width: 54px;">
+                                <img src="./icons/check.png" alt="check" class="none" id="emailcheck">
+                            </div>
+                        </div>
+                        <input type="text" name="email" id="email" style="width: 347px;">
+                        <div class="absolute right0 bottom-">
+                            <p class="validtext absolute right0 none">Looks good!</p>
+                            <div class="bottom0">
+                            <p class="invalidtext none">invalid email format</p>
+                            </div>
+                        </div>
+                    </span>
+                    <div class="bg46 padding5" style="width: 400px;height: 235px;">
+                        <ul class="white nobullets bg46">
+                            <li class="font18 flexrowaligncenter"><img src="./icons/check.png" alt="check"><p class="marginleft23">format: user@example.com</p></li>
+                            <li class="font18 flexrowaligncenter margintop13"><img src="./icons/check.png" alt="check"><p class="marginleft23">uppercase or lower case and digits</p></li>
+                            <li class="font18 flexrowaligncenter margintop13"><img src="./icons/check.png" alt="check"><p class="marginleft23">dot(.) dash(-) or underscore(_) 
+                                not at first, last or following 
+                                each other</p></li>
+                            <li class="font18 bg46 flexrowaligncenter margintop13"><img src="./icons/x.png" alt="x"><p class="marginleft23">!#$%&'*+-/=?^_`{|}~</p></li>
+                         </ul>
+                     </div>
+                </div>
+                <div class="flexcolumnspacearound" style="height: 446px;">
+                    <div class="flexrowspacearound"><p class="font34 white">strong password:</p><button id="copypasswordregex" class="flexrowspacearound flexcenter bgB9 regexbtn"><img src="./icons/clipboard.png"></img>copy regex</button></div>
+                    <input type="password" name="password" id="password" value="">
+                    <div class="bg46 padding5" style="width: 411px;height: 285px;">
+                        <UL class="white nobullets bg46">
+                            <li class="font18 flexrowaligncenter relative"><img src="./icons/x.png" alt="x" class="passwordx"><img src="./icons/check.png" alt="check" class="passwordcheck none"><p class="marginleft23">must contain 1 uppercase letter </p></li>
+                            <li class="font18 flexrowaligncenter relative margintop5"><img src="./icons/x.png" alt="x" class="passwordx"><img src="./icons/check.png" alt="check" class="passwordcheck none"><p class="marginleft23">must contain 1 lowercase letter </p></li>
+                            <li class="font18 flexrowaligncenter relative margintop5"><img src="./icons/x.png" alt="x" class="passwordx"><img src="./icons/check.png" alt="check" class="passwordcheck none"><p class="marginleft23">must contain 1 digit  </p></li>
+                            <li class="font18 flexrowaligncenter relative margintop5"><img src="./icons/x.png" alt="x" class="passwordx"><img src="./icons/check.png" alt="check" class="passwordcheck none"><p class="marginleft23">must not contain spaces</p></li>
+                            <li class="font18 flexrowaligncenter relative margintop13"><img src="./icons/x.png" alt="x" class="passwordx"><img src="./icons/check.png" alt="check" class="passwordcheck none"><p class="marginleft23">must contain 1 non alphanumeric character !#$%&'*+-/=?^_`{|}~  </p></li>
+                            <li class="font18 flexrowaligncenter relative margintop13"><img src="./icons/x.png" alt="x" class="passwordx"><img src="./icons/check.png" alt="check" class="passwordcheck none"><p class="marginleft23">must be between 8 and 16 
+characters </p></li>
+                        </UL>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="signature">
+            &lt;Honeycoded/&gt;
+        </div>
+    </section>
+
+    <section>
+        <div class="flexcolumnspacearound">
+            <div class="font72 limegreen center">search for a date in a text </div>
+            <div class="flexrowspacearound">
+                <div class="flexcolumnspacearound" style="height: 438px;width: 581px;">
+                    <textarea name="" id="paragraph" cols="30" rows="10" style="height: 240px;">Abbas was born on 13/06/1997.
+He started college at the AUST in October 01, 2015.
+He transferred his courses to LIU college and started fall semester there in 10/01/2019.
+He will hopefully graduate in June 06, 2022.
+Abbas was born on 13/06/1997.
+He started college at the AUST in October 01, 2015.
+He transferred his courses to LIU college and started fall semester there in 10/01/2019.
+He will hopefully graduate in June 06, 2022.</textarea>
+                    <label for="date" class="white font18">enter date: <input type="date" id="inputDate" ></label>
+                    <p class="white font18">select date format in text:</p>
+                    <div class="flexcenterspacearound">
+                    <label for="rb1" class="white font18"><input type="radio" name="dateformat" id="rb1" value="ddmmyyyy">&nbspdd/mm/yyyy</input></label>
+                    <label for="rb2" class="white font18"><input type="radio" name="dateformat" id="rb2" value="mmddyyyy">&nbspmm/dd/yyyy</label>
+                    <label for="rb3" class="white font18"><input type="radio" name="dateformat" id="rb3" value="mdy">&nbspmonth day, year</label>
+                    </div>
+                    <button id='searchDate'>
+                        search                       
+                    </button>
+                </div>
+                <div>
+                    <p class="font24 white marginbottom10">output</p>
+                    <div class="border-top border-bottom white padding5 font14" id="dateSearchOutput" style="height: 342px;width: 581px;">
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="signature">
+            &lt;Honeycoded/&gt;
+        </div>
+    </section>
+
+    <section>
+        <div class="flexcolumnspacearound">
+            <div class="font72 limegreen center">count words in a paragraph</div>
+            <div class="flexcolumnspacearound flexcenter" style="height: 429px;">
+                <p class="font18 white"  style="width: 1084px;">paste your paragraph here:</p>
+                <textarea name="words" id="words" cols="30" rows="10" style="width: 1084px; height: 240px;" class="bgc4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit dolorum quam ut quibusdam voluptatem, ratione aliquam quis reprehenderit cum vel soluta maiores ab necessitatibus iure facilis odio saepe. Nam, officia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, incidunt quam! Nam illum voluptas rem dicta cum adipisci animi quaerat enim atque architecto tempora, debitis perferendis earum quam error labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius esse debitis similique! Fuga amet aliquam ducimus molestiae aperiam! In aliquid laboriosam labore et, nihil voluptas a similique at hic! Reiciendis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio quibusdam aperiam incidunt rerum. Obcaecati facere recusandae tempora asperiores deleniti iure, laborum, quas atque ipsum doloribus odio vero explicabo quibusdam cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ab obcaecati, qui deserunt dolorem corporis, voluptate id asperiores odit quas modi distinctio tempora voluptatum esse minus vel cum numquam rem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quam blanditiis accusamus a, molestiae ullam praesentium voluptas quidem velit, molestias debitis! Quia, voluptatibus minus similique rerum minima officiis porro labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero fuga cupiditate quia dolorum quasi, distinctio soluta exercitationem totam voluptatum fugit. Error adipisci vitae nulla perferendis molestiae. Assumenda, illum recusandae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis voluptatem asperiores deleniti quaerat rerum quidem magni soluta accusantium voluptas. Vitae perspiciatis quasi autem minus quas maxime harum labore possimus rerum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam cumque, quo natus eligendi laborum tempora praesentium nostrum hic quidem asperiores commodi magni. Quaerat mollitia eveniet possimus quo! Reprehenderit, porro distinctio. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus tenetur temporibus amet ipsum suscipit fugit, sit adipisci possimus, quae perferendis voluptatem optio ex harum autem cum dicta soluta asperiores explicabo!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsa recusandae id optio odit doloremque laudantium voluptate quas, praesentium perspiciatis libero sint natus, rerum iure in sapiente? Delectus, modi dolores.</textarea>
+                <div style="width: 1084px;"><button style="width: 119px; height:37px" class="font18 bgc4" id="countWords">count words</button></div>
+                <p class="font18 white"  style="width: 1084px;">total words: <span id="countedWords">0</span></p>
+            </div>
+        </div>
+        <div class="signature">
+            &lt;Honeycoded/&gt;
+        </div>
+    </section>
+
+    <section>
+        <div class="flexcolumnspacearound">
+            <div class="limegreen font72 center">ip address validator</div>
+            <div class="flexcolumnspacearound flexcenter" style="height: 214px;">
+                    <div class="relative">
+                        <input type="text" name="ipv6" id="ipinput" class="bgc4" style="width: 780px;height: 56px;">
+                        <div class="absolute right0 top0 flexcenter bg46" style="height: 56px;width: 52px;">
+                            <div class="none" id="validip">
+                                <img src="./icons/check.png" alt="valid ip">
+                                <p class="absolute validtext font14" style="bottom: -20px;left: -30px;">valid 
+                                    <markup id="ipid"></markup>
+                                </p>
+                            </div>
+                            <div class="absolute none" id="invalidip">
+                                <img src="./icons/x.png" alt="valid ip">
+                                <p class="absolute invalidtext font14" style="bottom: -30px;right: -7px;">invalid</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="font18 bgc4 padding5" id="validateip">validate</button>
+                    <p class="white font34" style="width: 780px;">&#8226;supports ipv4 & ipv6</p>
+            </div>
+        </div>
+        <div class="signature">
+            &lt;Honeycoded/&gt;
+        </div>
+    </section>
+
+    <section>
+        <div class="flexcolumn flexcenter">
+        <input type='text' id='regex'>
+         <button id='click' >click</button>
+        <p class='white font34' id='output'>none</p>
+        </div>
+    </section>
+<div class="cursor none">copied</div>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="./myregexworld/main.js"></script>
+</body>
+</html>
